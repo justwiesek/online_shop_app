@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Beauty Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/beauty-icon-12.jpg" type="image/x-icon">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/offers.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row my-5 align-items-end">
+                <div class="col ">
+                    <img src="./img/Beauty_LogoPNG.png" id="logo" class="img__logo">
+                </div>
+
+                <div class="col ">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/bag_icon.png" id="img-bag" class="img__shop">
+                            <div id="shopping-cart">
+                                <table id="cart__content" class="u-full-width">
+                                    <div class="basket">CHECK YOUR BASKET: </div>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="clear__cart" class="button u-full-width">Clear Cart</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="slideshow-container">
+        <div class="slideshow fade">
+            <img class="slideshow__img" src="./img/flowers-in-bloom.jpg" alt="" />
+        </div>
+        <div class="slideshow fade">
+            <img class="slideshow__img" src="./img/beautiful-blooming-bouquet.jpg" alt="" />
+        </div>
+        <div class="slideshow fade">
+            <img class="slideshow__img" src="./img/beautiful-flowers.jpg" alt="" />
+        </div>
+
+        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+        <a class="next" onclick='plusSlides(+1)'>&#10095;</a>
+
+        <div class="dots__container">
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+        </div>
+    </div>
+
+
+    <div id="cosmetics-list" class="container">
+        <h1 id="heading" class="heading text-center">New releases!</h1>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/bielenda.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>bielenda</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>39,90 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/revolution.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>i heart revolution</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>44,90 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/gabka.png" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>blend it</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>22,80 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/sukin.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>sukin</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>66,90 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/milani.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>milani</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>78,90 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/nacomi.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>nacomi</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>19,70 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/ofra.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>ofra</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>55,80 zł</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="product__card">
+                    <img src="./img/thebalm.jpg" class="item__image u-full-width">
+                    <div class="info__card">
+                        <h4>thebalm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="price"><span>9,90 zł</span>4</p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <!--.row-->
+
+        <div id="cosmetics-list" class="container">
+            <h1 id="heading" class="heading text-center">Choose your favourite!</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product__card">
+                        <img src="./img/tangle_teezer.jpg" class="item__image u-full-width">
+                        <div class="info__card">
+                            <h4>tangle teezer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="price"><span>37,90 zł</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product__card">
+                        <img src="./img/vichy.jpg" class="item__image u-full-width">
+                        <div class="info__card">
+                            <h4>vichy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="price"><span>22,90 zł</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product__card">
+                        <img src="./img/paese.jpg" class="item__image u-full-width">
+                        <div class="info__card">
+                            <h4>paese</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="price"><span>18,80 zł</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product__card">
+                        <img src="./img/kallos.jpg" class="item__image u-full-width">
+                        <div class="info__card">
+                            <h4>kallos</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="price"><span>5,90 zł</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+            </div>
+            <!--.row-->
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-4">
+                    <ul>
+                        <li><span class="footer__label">Info</span>
+                            <ul class="footer__links">
+                                <li><a href="#"><span>About us</span></a></li>
+                                <li><a href="#"><span>Delivery</span></a></li>
+                                <li><a href="#"><span>Payments</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-5">
+                    <ul>
+                        <li><span class="footer__label">More</span>
+                            <ul class="footer__links">
+                                <li><a href="#"><span>Return / exchange the product</span></a>
+                                </li>
+                                <li><a href="#"><span>Rules</span></a></li>
+                                <li><a href="#"><span>Privacy policy</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-2">
+                    <ul id="menu__social" class="footer__links">
+                        <li>
+                            <a href="#"><img src="./img/fb.png" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/ig.png" alt="instagram"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
